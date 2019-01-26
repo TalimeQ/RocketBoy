@@ -20,6 +20,9 @@ protected:
 	virtual void BeginPlay() override;
 	UFUNCTION(BlueprintNativeEvent)
 	void Interacted();
+	UPROPERTY(BlueprintReadWrite)
+		bool bIsIdling = true;
+
 
 public:	
 	// Called every frame
